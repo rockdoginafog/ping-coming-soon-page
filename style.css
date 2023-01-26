@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root{
+    --blue: hsl(223, 100%, 65%);
+    --pale-blue: hsl(223, 97%, 73%);
+    --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin-top: 1em;
+}
+
+p{
+    margin-top: 1em;
+    font-weight: 600;
+}
+
+#h1-font{
+    font-weight: 300;
+    opacity: 0.6;
+}
+
+form{
+    margin-top: 1em;
+}
+
+.logo{
+    width: 8em;
+}
+
+.error{
+    display: flex;
+    align-items: center;
+    gap:  1em;
+    color: var(--light-red);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.illustration-dashboard{
+    width: 30em;
+    margin-top: 2em;
+}
+
+input{
+    border-radius: 1em;
+    padding: 1em;
+    width: 250px;
+    border: 1px solid black;
+    opacity: 0.7;
+}
+
+button{
+    cursor: pointer;
+}
+
+.notify-me{
+    padding: 1em;
+    background-color: var(--blue);
+    border: 0;
+    width: 150px;
+    border-radius: 1em;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.7s ease;
+}
+
+#form{
+    display: flex;
+    gap: 1em;
+}
+
+.notify-me:hover{
+    background-color: var(--pale-blue);
+    box-shadow: 8px 8px 24px -12px rgba(66, 68, 90, 1);
+}
+
+.attribution{
+    opacity: 0.5;
+    text-align: center;
+}
+
+.attribution a{
+    color: black;
+    text-underline-offset: 0.2em;
+}
+
+.social-media{
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.red{
+    border: 1px solid red;
+}
+
+.green{
+    border: 1px solid green;
+}
+
+.hidden{
+    display: none;
+}
+
+@media (max-width: 520px){
+
+    .illustration-dashboard{
+        width: 25em;
+    }
+
+    #form{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+}
+
+@media (max-width: 520px){
+
+    .logo{
+        width: 5em;
+    }
+
+    .illustration-dashboard{
+        width: 20em;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+}
